@@ -1,0 +1,242 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body 
+{
+  margin: 0;
+  font-family: BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+
+/*Project Display Each Section*/
+.container{
+
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.container .projects{
+	scroll-snap-align: start;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-blend-mode: multiply;
+}
+
+.projects{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.current_project_no{
+	font-size: 50px;
+	font-family: Didot,serif;
+	display: inline;
+}
+
+.total_project_no{
+	font-size: 30px;
+	font-family: Didot,serif;
+	display: inline;
+}
+
+.project_image{
+	width: 50%;
+}
+
+.project_image img{
+	align-items: center;
+	width: 550px;
+	margin-top: 100px; 
+	margin-left: 60px; 
+}
+
+.content{
+	width: 50%;
+	margin-top: -300px; 
+	padding: 20px;
+	justify-content: space-around;
+	float: right;
+	font-size: 20px;
+}
+
+.title_no{
+	font-family: Didot,serif;
+	font-size: 50px;
+	display: inline;
+}
+
+.title{
+	font-family: Didot,serif;
+	font-size: 50px;
+	display: inline;
+}
+
+.content button{
+	width: 200px;
+	font-size: 30px;
+	position: absolute;
+	height: 50px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.next_project{
+	bottom: 30px;
+	right: 30px;
+	background-color: #E03928;
+}
+
+/*For Greenovators*/
+#Greenovators {
+	background-color: #FCF1F9;
+	background-attachment: fixed;
+}
+
+#Greenovators .current_project_no, 
+#Greenovators .total_project_no{
+	color: #33333A;
+}
+
+#Greenovators .content, 
+#Greenovators .title_no{
+	color: gray;
+}
+
+#Greenovators .title{
+	color: #33333A;
+}
+
+#Greenovators .project_working{
+	background-color: #33333A 
+}
+
+/*For Vrukshpaal*/
+#Vrukshpaal {
+	background-color: #D4F0F5;
+}
+
+#Vrukshpaal .current_project_no, 
+#Vrukshpaal .total_project_no{
+	color: #040498;
+}
+
+#Vrukshpaal .title_no{
+	color: #A6A6F1;
+}
+
+#Vrukshpaal .title{
+	color: #040498;
+}
+
+#Vrukshpaal .content{
+	color: #6A6AE3;
+	/*margin-top: -450px;*/ 
+}
+
+#Vrukshpaal .project_working{
+	background-color: #040498 
+}
+
+#Vrukshpaal .project_image img{
+	margin-top: 10px; 
+}
+
+/*For CliniCare*/
+#CliniCare {
+	background-color: #352A99;
+}
+
+#CliniCare .current_project_no, 
+#CliniCare .total_project_no{
+	color: #F4DB26;
+}
+
+#CliniCare .title_no, 
+#CliniCare .content{
+	color: #FEEF85
+}
+
+#CliniCare .title{
+	color: #F4DB26;
+}
+
+#CliniCare .project_working{
+	background-color: #F4DB26 
+}
+
+@media screen and (max-width: 900px) {
+  .container .project_image{
+    width: 100%;
+  }
+
+  .project_image img{
+    width: 50%;
+    padding: 0;
+    margin-left:180px;
+    margin-top:-40px;
+    height: 200px;
+  }
+
+  #Vrukshpaal .project_image img{
+    margin-top:-50px;
+  }
+
+  .content {
+  	width: 100%;
+  	padding: 0;
+  	margin: 0; 
+  }
+
+  #Vrukshpaal .content {
+  	width: 100%;
+  	padding: 0;
+  	margin: 0;
+  }
+
+  .project_working, #Vrukshpaal .project_working{
+  	position: absolute;
+  	left: 120px;
+  	height: 40px;
+  } 
+}
+
+@media screen and (max-width: 500px) {
+  .project_image img{
+    margin-left:100px;
+  }
+
+  .content {
+  	width: 100%;
+  	padding: 0;
+  	margin: 0;
+  	font-size: 17px; 
+  }
+
+  .title_no, .title{
+  	font-size: 30px;
+  }
+
+  .project_working, #Vrukshpaal .project_working{
+  	position: absolute;
+  	left: 50px;
+  	height: 40px;
+  } 
+
+  .content button{
+  	width: 100px;
+  	font-size:20px; 
+  }
+
+  .next_project{
+  	position: absolute;
+  	bottom: 10px;
+  }
+}

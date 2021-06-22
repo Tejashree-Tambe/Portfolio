@@ -1,0 +1,218 @@
+body 
+{
+  margin: 0;
+  font-family: BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+/*Introduction*/
+.introduction{
+	overflow:auto;
+	width: 100%;
+	background-image: url('code_background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+    left:0;
+    top: 0;
+}
+
+#about_container{
+	display: inline;
+}
+
+.about_block{
+  padding-top: 50px;
+  padding-left: 130px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right: 20px;
+  color: yellow;
+  width: 50%;
+  position: relative;
+  left:0;
+  top: 0;
+}
+
+.title{
+  font-size: 60px;
+}
+
+.about{
+  font-size: 18px;
+  color: pink; 
+}
+
+.about p{
+	font-size: 30px;
+	font-weight: 300px;
+}
+
+.individual_container{
+	line-height: 200%;
+	font-size: 40px;
+	margin: 90px;
+	background: #AED6F1;
+	display: inline;
+	margin-top: -350px;
+}
+
+#individual_container{
+	float: right;
+}
+
+.individual{
+	padding: 40px;
+	opacity: 1;
+	text-align: center;
+}
+
+.know_more{
+	text-align: center; 
+}
+.know_more p{
+	text-align: center;
+	font-size: 35px;
+	height: 60px;
+	background-color: none;
+	color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .introduction .know_more{
+    width: 100%;
+  }
+
+  .about_block {
+    padding-top: 0px;
+    text-align: left;
+    margin: 0px;
+    width: 30%;
+  }
+
+  .know_more p{
+  	margin-top: -50px;
+  	margin-left: 120px;
+  	float: left; 
+  }
+}
+
+/*Photo and Short Info*/
+.short_info{
+	width:100%;
+	background-image: url("pink_background.jpg");
+	overflow:auto;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+    left:0;
+    top: 0;
+}
+
+.my_picture{
+	float:left; 
+}
+
+.my_picture img{
+	margin-left:30px;
+	margin-top: 70px;
+	border: 2px solid black;
+}
+
+.who_m_i p{
+	margin-left: 760px;
+	margin-top: -740px; 
+	display: inline;
+	float: right;
+	text-align: justify;
+	margin-right: 30px;
+	font-size: 24px;
+}
+
+.who_m_i b{
+	font-size: 40px;
+}
+
+.who_m_i a{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .short_info {
+    width: 100%;
+  }
+
+  .my_picture{
+  	text-align: center; 
+  }
+
+  .short_info .my_picture img{
+    width: 100%;
+    margin-left: 120px;
+  }
+
+  .who_m_i p{
+  	margin-top: 0px;
+  	text-align: justify; 
+  	margin-left: 10px;
+  	width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .short_info {
+    width: 100%;
+  }
+
+  .short_info .my_picture img{
+  	margin: 0;
+  	margin-left: 40px;
+  	align-content: center;
+  }
+
+  .who_m_i p{
+  	margin-top: 0px;
+  	text-align: justify; 
+  	margin-left: 10px;
+  	width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .short_info {
+    width: 100%;
+  }
+
+  .about_block{
+ 	width: 100%;
+  	margin: 0;
+  	padding: 0;
+  	text-align: center; 
+  }
+
+  .individual_container{
+  	margin: 0;
+  	padding: 0;
+  }
+
+  #individual_container{
+  	float: none;
+  }
+
+  .know_more p{
+  	margin: 0;
+  }
+
+  .short_info .my_picture img{
+  	margin: 0;
+  	align-content: center;
+  }
+
+  .who_m_i p{
+  	text-align: justify; 
+  	margin-left: 10px;
+  	width: 90%;
+  }
+}

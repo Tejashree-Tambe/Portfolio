@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects: Tejashree Tambe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="portfolio_css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="portfolio_css/projects.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <pre>Hello
+         bi</pre>
+	<!-- Navbar -->
+    <div class="navbar" id="navbar">
+        <div class="navbar_start" id="navbar_start">
+        	<img class="nav_logo" src="music_logo1.png">
+            <a id="navbar_logo" href="portfolio.html">Tejashree Tambe</p></a>
+            <div class="nav_right">
+  				<a href="portfolio.html">About</a>
+	            <a href="projects.html">Projects</a>
+	            <a href="contact.html">Contact</a>
+	            <a href="javascript:void(0);" class="icon" onclick="showMenu()"></a>
+            </div>
+        </div>
+    </div>
+    <!-- End of Navbar -->
+
+    <div class="container">
+        <div class="projects" id="Greenovators">
+            <p class="current_project_no">1| </p><p class="total_project_no">3</p>
+            
+            <div class="project_image">
+                <img src="Greenovators.png">
+            </div>
+            
+            <div class="content">
+                <p class="title_no">01. </p><p class="title">GREENOVATORS</p>
+                <p>A website made with HTML and CSS that serves as platform for not only for farmers but also home gardeners to wisely choose the crops/seeds suitable for the environment they live in and buying the same from legitimate sellers at a good price.</p>
+                <pre><p style="color: #33333A">ROLE                          YEAR</p></pre>
+                <pre><p style="color: gray">FRONT END DEVELOPER           2020</p></pre>
+                <a href="https://drive.google.com/file/d/1WyyrddNC0WmbO6R5sVHmp3c62MB0ALvg/view?usp=sharing"><button class="project_working">Working</button></a>
+                <a href="#Vrukshpaal"><button class="next_project">Next Project</button></a>
+            </div>
+        </div>
+
+        <div class="projects" id="Vrukshpaal">
+            <p class="current_project_no">2| </p><p class="total_project_no">3</p>
+            
+            <div class="project_image">
+                <img src="Vrukshpaal.png">
+            </div>
+            
+            <div class="content"> <!-- style="margin-top: -400px"> -->
+                <p class="title_no">02. </p><p class="title">VRUKSHPAAL</p>
+                <p>An application designed using Java Swings and MariaDB at the backend. This application serves as a platform to users namely individuals, businesses and schools to be able to plant or volunteer to plant tress without being personally there i.e online.</p>
+                <pre><p style="color: #040498;">ROLE                          YEAR</p></pre>
+                <pre><p style="color: #6A6AE3;">FRONT END DEVELOPER           2020</p></pre>
+                <a href="https://drive.google.com/file/d/1i6J4phfiaPKwgW5qqKJgj4WuChZMQwIE/view?usp=sharing"><button class="project_working">Working</button></a>
+                <a href="#CliniCare"><button class="next_project">Next Project</button></a>
+            </div>
+        </div>
+
+        <div class="projects" id="CliniCare">
+            <p class="current_project_no">3| </p><p class="total_project_no">3</p>
+            
+            <div class="project_image">
+                <img src="CliniCare.png">
+            </div>
+            
+            <div class="content">
+                <p class="title_no">03. </p><p class="title">CLINICARE</p>
+                <p>It is made in Django with PostgreSql at the backend for dermatologists. It maintains medical records, details of patients in small clinics. It helps manage appointments, product inventory and generates reports of the clinics’ growth for the doctor.</p>
+                <pre><p style="color: #F4DB26">ROLE                           YEAR</p></pre>
+                <pre><p style="color: #FCF8D9">FULL STACK DEVELOPER           2021</p></pre>
+                <a href="#Greenovators"><button class="project_working">Working</button></a>
+                <a href="#Greenovators"><button class="next_project">Next Project</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showMenu() {
+          var x = document.getElementById("navbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        };
+
+    </script>
+</body>
+</html>
